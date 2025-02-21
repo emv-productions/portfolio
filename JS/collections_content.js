@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    fetch("../DB/Collections/collections.json")
+    fetch("../DB/collections.json")
         .then(response => response.json())
         .then(data => mostrarCards(data))
         .catch(error => console.error("Error al cargar el JSON", error));

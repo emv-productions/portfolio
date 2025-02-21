@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
         return;
     }
 
-    fetch("../DB/Collections/collections.json")
+    fetch("../DB/collections.json")
         .then(response => {
             if (!response.ok) throw new Error(window.location.href = "collections.html");
             return response.json();
