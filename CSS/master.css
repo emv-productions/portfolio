@@ -1,0 +1,19 @@
+* {
+    font-family: "New spirit condensed", serif;
+    font-style: normal;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase !important;
+}
+
+.container {
+    display: flex;
+    width: 100vw !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
