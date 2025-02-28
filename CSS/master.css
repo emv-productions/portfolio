@@ -1,7 +1,6 @@
 * {
     font-family: "New spirit condensed", serif;
     font-style: normal;
-    overflow-x: hidden;
     scroll-behavior: smooth;
 }
 
@@ -9,6 +8,7 @@ body {
     margin: 0;
     padding: 0;
     text-transform: uppercase !important;
+    background-color: #eeedeb;
 }
 
 .container {

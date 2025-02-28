@@ -1,3 +1,7 @@
+.container {
+    flex-direction: column;
+}
+
 .portada {
     width: 100vw;
     height: 350px;
@@ -23,10 +27,6 @@
     flex-direction: column;
     padding: 3rem;
     text-align: center;
-}
-
-.text title {
-
 }
 
 .text .description {
@@ -58,13 +58,19 @@
     align-content: center;
     width: 100vw;
     position: fixed;
-    bottom: 0;
+    bottom: 30%;
 }
 
 .btn-prev,
 .btn-next {
     background-color: transparent;
     border: none;
+    width: 50%;
+    display: flex;
+}
+
+.btn-prev a,
+.btn-next a {
     font-size: 1.5em;
     font-weight: 600;
     color: #fff;
@@ -72,8 +78,7 @@
     margin: 1rem;
     cursor: pointer;
     text-decoration: none;
-    width: 50%;
-    display: flex;
+    transform: scaleY(3);
 }
 
 .btn-next {

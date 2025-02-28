@@ -1,0 +1,40 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    padding: 84px 8rem 3rem 8rem;
+    text-transform: none;
+}
+
+h1, h2 {
+    font-family: EB Garamond, serif;
+    font-weight: 400;
+    letter-spacing: .4rem;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.8em;
+}
+
+h2 {
+    font-size: 2em;
+    margin: 4rem 0;
+}
+
+ul {
+    margin: 0;
+}
+
+li, p {
+    margin: 0.5rem 0;
+    font-family: EB Garamond, serif;
+    font-weight: 100;
+    letter-spacing: .1rem;
+    text-align: left !important;
+    font-size: 1.2em;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}

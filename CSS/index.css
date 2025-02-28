@@ -10,7 +10,8 @@ div {
 .content {
     width: 50%;
     height: 100%;
-    overflow: hidden;
+    background-color: #eeedeb;
+    cursor: default;
 }
 
 .div-image {
@@ -30,7 +31,7 @@ div {
 }
 
 .content .logo,
-.content .footer {
+.content .contact {
     height: 25%;
     border-color: red;
     display: flex;
@@ -86,7 +87,7 @@ p {
 }
 
 .content .text .div-btn .btn {
-    background-color: #fff;
+    background-color: #eeedeb;
     box-shadow: 1px 1px 3px #0002;
     border-radius: 10px;
     color: #000;
@@ -95,6 +96,7 @@ p {
     width: 200px;
     font-weight: 600;
     -webkit-transition: 0.25s !important;
+    cursor: pointer !important;
 }
 
 .content .text .div-btn .btn:hover {
@@ -102,17 +104,17 @@ p {
     -webkit-transition: 0.25s !important;
 }
 
-.content .footer {
+.content .contact {
     flex-wrap: wrap;
     gap: 0.5rem;
 }
 
-.content .footer a img:hover {
+.content .contact a img:hover {
     transform: scale(1.25);
     -webkit-transition: 0.25s !important;
 }
 
-.content .footer img {
+.content .contact img {
     width: 25px;
     -webkit-transition: 0.25s !important;
 }
