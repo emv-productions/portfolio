@@ -4,6 +4,9 @@ div {
 
 .container {
     height: 100vh !important;
+    max-height: 100vh !important;
+    flex-direction: row !important;
+    overflow-y: hidden;
 }
 
 .div-image,

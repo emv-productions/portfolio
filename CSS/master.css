@@ -5,6 +5,7 @@
 }
 
 body {
+    min-width: 355px !important;
     margin: 0;
     padding: 0;
     text-transform: uppercase !important;
@@ -12,9 +13,10 @@ body {
 }
 
 .container {
-    display: flex;
-    width: 100vw !important;
-    max-width: 100% !important;
+    display: flex !important;
+    flex-direction: column;
     margin: 0 !important;
     padding: 0 !important;
+    width: 100vw !important;
+    max-width: 100% !important;
 }

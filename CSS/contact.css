@@ -1,0 +1,95 @@
+#contact_content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100vw;
+    height: 70vh;
+    margin: 80px 0 0 0;
+}
+
+.text-content, .fields-content {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-content: center;
+    width: 50%;
+    height: 100%;
+}
+
+.fields-content {
+    padding: 4rem 8rem 0 0;
+}
+
+.text-content {
+    margin: 0;
+    padding: 4rem 8rem;
+}
+
+.text-content h3 {
+    margin: 0 !important;
+    font-weight: 600;
+    padding: 0 0 1rem 0;
+    text-transform: none;
+}
+
+.text-content p {
+    margin: 0 !important;
+    font-size: 18px;
+    text-transform: none;
+    padding: 2rem 4rem;
+    text-align: center;
+}
+
+.fields-content label {
+    text-transform: none;
+    font-size: 20px;
+    margin: 0;
+    align-items: center;
+    align-content: center;
+    display: flex;
+    width: 100%;
+    padding: 0 0 0 .2rem;
+}
+
+.fields-content span {
+    font-size: 12px;
+    color: #0008;
+}
+
+.fields-content input, .fields-content textarea {
+    margin: 0 0 1rem 0;
+    height: 40px;
+    min-height: 40px;
+    border: 1px solid #0003;
+    padding: .5rem;
+    text-transform: uppercase;
+}
+
+.fields-content input::placeholder, .fields-content textarea::placeholder {
+    text-transform: none;
+}
+
+.fields-content input:focus-visible, .fields-content textarea:focus-visible {
+    outline: 1px solid #000;
+}
+
+.fields-content textarea {
+    overflow-y: scroll;
+    min-height: 80px;
+    resize: none;
+}
+
+.fields-content .btn-content {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1rem;
+}
+
+.fields-content .btn {
+    background-color: #000 !important;
+    font-weight: 600;
+    width: 25%;
+    margin: 0 !important;
+}
