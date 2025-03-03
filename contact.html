@@ -34,6 +34,16 @@
     <link
         href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
         rel="stylesheet">
+
+    <!-- EmailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+
+    <!-- Google Recaptcha -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+    <!-- Sweet Alert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body>
@@ -46,26 +56,30 @@
                 </p>
             </div>
             <div class="fields-content">
-                <label>Name</label>
-                <input id="txtName" type="text" value="" placeholder="Name" autocapitalize="true" autocomplete="false"
-                    aria-invalid="false">
-                <label>Last Name</label>
-                <input id="txtLastName" type="text" value="" placeholder="Last Name" autocapitalize="true"
-                    autocomplete="false" aria-invalid="false">
-                <label>Email&nbsp;<span>(required)</span></label>
-                <input id="txtEmail" type="email" value="" placeholder="Email" autocapitalize="true"
-                    autocomplete="false" aria-invalid="false">
-                <label>Message&nbsp;<span>(required)</span></label>
-                <textarea id="txtMessage" maxlength="400" autocapitalize="true" autocomplete="false"
-                    aria-invalid="false" aria-required="true" value=""
-                    placeholder="Leave me your question..."></textarea>
-                <div class="btn-content">
-                    <input type="button" class="btn btn-dark" value="Send">
-                </div>
+                <form id="contactForm">
+                    <label>Name</label>
+                    <input id="txtName" type="text" value="" placeholder="Name" autocapitalize="true"
+                        autocomplete="false" aria-invalid="false">
+                    <label>Last Name</label>
+                    <input id="txtLastName" type="text" value="" placeholder="Last Name" autocapitalize="true"
+                        autocomplete="false" aria-invalid="false">
+                    <label>Email&nbsp;<span>(required)</span></label>
+                    <input id="txtEmail" type="email" value="" placeholder="Email" autocapitalize="true"
+                        autocomplete="false" aria-invalid="false" required>
+                    <label>Message&nbsp;<span>(required)</span></label>
+                    <textarea id="txtMessage" maxlength="400" autocapitalize="true" autocomplete="false"
+                        aria-invalid="false" aria-required="true" value="" placeholder="Leave me your question..."
+                        required></textarea>
+                    <div class="btn-content">
+                        <div id="captcha" class="g-recaptcha" data-sitekey="6Ld4QugqAAAAALoIS24qew-xJXHBaiVylMhFccbK" data-callback="enableBtn"></div>
+                        <input type="submit" class="btn btn-dark" value="Send" OnClientClick="return validateRecaptcha();">
+                    </div>
+                </form>
             </div>
         </div>
         <div id="footer"></div>
     </div>
+    <script src="JS/contact.js"></script>
 </body>
 
 </html>
