@@ -4,8 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="photography workshop, photography service, portfolio photography, the photographs, photography, lighting photography, photographer, kodak photos, family photos, white photos, digital photos, product photos, photo photos, corporate photos, photos with lights, artistic photos, minimalist photography, real estate photography, event photographers, event photographer, freelance photographer, aerial photography, advertising photography, professional photography, landscape photography, night photography, documentary photography, product photography, landscape photography, nature photography, corporate photography, artistic photography, color photography, advertising photography, professional photography, product photo, photoshop photo, panoramic photo, night photo, minimalist photo, photo europe, studio photo, business photo, documentary photo, digital photo, sky photo, portrait photo, studio photo, corporate photo, flash photo, photo studio, photo editing, photo direction, professional photo cameras, photo cameras, backlight photography, photo book, photo albums">
-    <script src="JS/header.js"></script>
+    <meta name="keywords"
+        content="photography workshop, photography service, portfolio photography, the photographs, photography, lighting photography, photographer, kodak photos, family photos, white photos, digital photos, product photos, photo photos, corporate photos, photos with lights, artistic photos, minimalist photography, real estate photography, event photographers, event photographer, freelance photographer, aerial photography, advertising photography, professional photography, landscape photography, night photography, documentary photography, product photography, landscape photography, nature photography, corporate photography, artistic photography, color photography, advertising photography, professional photography, product photo, photoshop photo, panoramic photo, night photo, minimalist photo, photo europe, studio photo, business photo, documentary photo, digital photo, sky photo, portrait photo, studio photo, corporate photo, flash photo, photo studio, photo editing, photo direction, professional photo cameras, photo cameras, backlight photography, photo book, photo albums">
+    <link href="CSS/header.css" rel="stylesheet" />
+    <link href="CSS/footer.css" rel="stylesheet" />
     <script src="JS/footer.js"></script>
     <link href="CSS/terms.css" rel="stylesheet" />
     <link href="CSS/master.css" rel="stylesheet" />
@@ -13,7 +15,19 @@
 </head>
 
 <body>
-    <div id="header"></div>
+    <div id="header">
+        <div class="logo">
+            <a href="index.html" style="text-decoration: none;"><img src="Multimedia/Header/Logos/logo.png" alt="Logo"
+                    oncontextmenu="return false;"></a>
+        </div>
+        <div class="links">
+            <a href="collections.html">Collections</a>
+            <a href="collaborations.html">Collaborations</a>
+            <a href="services.html">Services</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
     <div class="content">
         <h1>Privacy Policy</h1>
         <h2>General Information</h2>
@@ -62,13 +76,22 @@
         <p>For any inquiries related to data privacy, users can contact us through:</p>
         <ul>
             <li>Email: <a href="mailto:ezequiel.vieta@gmail.com">ezequiel.vieta@gmail.com</a></li>
-            <li>Instagram: <a href="https://www.instagram.com/ezequielvieta"
-                    target="_blank">@ezequielvieta</a></li>
-            <li>YouTube: <a href="https://www.youtube.com/@EzequielVieta"
-                    target="_blank">Ezequiel Vieta</a></li>
+            <li>Instagram: <a href="https://www.instagram.com/ezequielvieta" target="_blank">@ezequielvieta</a></li>
+            <li>YouTube: <a href="https://www.youtube.com/@EzequielVieta" target="_blank">Ezequiel Vieta</a></li>
         </ul>
     </div>
-    <div id="footer"></div>
+    <div id="footer">
+        <div class="div-copyright">
+            <a href="https://instagram.com/compugrossok/?theme=dark" target="_blank">
+                <img title="CompuGross" src="Multimedia/Footer/logoCG.png" alt="Logo Desarrollador"
+                    oncontextmenu="return false;">
+            </a>
+            <h5>© <span id="yearSpan"></span></h5>
+        </div>
+        <div class="div-terms">
+            <a href="terms.html">Privacy - Terms</a>
+        </div>
+    </div>
 </body>
 
 </html>

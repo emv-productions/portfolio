@@ -14,12 +14,13 @@
 
     <!-- Título, referencias -->
     <title>EMV - Collections</title>
-    <link rel="Shortcut Icon" type="image/x-icon" href="../Multimedia/Master/icono.ico" />
-    <script src="../JS/header.js"></script>
-    <script src="../JS/footer.js"></script>
-    <link href="../CSS/collections.css" rel="stylesheet" />
-    <link href="../CSS/master.css" rel="stylesheet" />
-    <script src="../JS/master.js"></script>
+    <link rel="Shortcut Icon" type="image/x-icon" href="Multimedia/Master/icono.ico" />
+    <link href="CSS/header.css" rel="stylesheet" />
+    <link href="CSS/footer.css" rel="stylesheet" />
+    <link href="CSS/collections.css" rel="stylesheet" />
+    <link href="CSS/master.css" rel="stylesheet" />
+    <script src="JS/master.js"></script>
+    <script src="JS/footer.js"></script>
 
     <!-- Fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,7 +31,19 @@
 </head>
 <body>
     <div class="container">
-        <div id="header"></div>
+        <div id="header">
+            <div class="logo">
+                <a href="index.html" style="text-decoration: none;"><img src="Multimedia/Header/Logos/logo.png"
+                        alt="Logo" oncontextmenu="return false;"></a>
+            </div>
+            <div class="links">
+                <a href="collections.html">Collections</a>
+                <a href="collaborations.html">Collaborations</a>
+                <a href="services.html">Services</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
         <div id="collections_content">
             <div id="cards-container" class="cards-grid">
                 <a class="card-link" href="Collections/1.html">
@@ -96,7 +109,7 @@
                         </div>
                     </div>
                 </a>
-                <a class="card-link" href="Collections/8.html">
+                <!-- <a class="card-link" href="Collections/8.html">
                     <div class="card">
                         <div class="div-img"><img src="Multimedia/Collections/8/1.jpg" alt="Portada" oncontextmenu="return false;">
                         </div>
@@ -150,7 +163,7 @@
                         </div>
                     </div>
                 </a>
-                <!-- <a class="card-link" href="Collections/14.html">
+                <a class="card-link" href="Collections/14.html">
                     <div class="card">
                         <div class="div-img"><img src="Multimedia/Collections/14/1.jpg" alt="Portada" oncontextmenu="return false;">
                         </div>
@@ -158,7 +171,7 @@
                             <h3>MATIAS SOULE. Turin, Italy</h3>
                         </div>
                     </div>
-                </a> -->
+                </a>
                 <a class="card-link" href="Collections/15.html">
                     <div class="card">
                         <div class="div-img"><img src="Multimedia/Collections/15/1.jpg" alt="Portada" oncontextmenu="return false;">
@@ -176,10 +189,20 @@
                             <h3>MANDALI RETREAT CENTER. D'Orta Lake, Italy</h3>
                         </div>
                     </div>
-                </a>
+                </a> -->
             </div>
         </div>
-        <div id="footer"></div>
+        <div id="footer">
+            <div class="div-copyright">
+                <a href="https://instagram.com/compugrossok/?theme=dark" target="_blank">
+                    <img title="CompuGross" src="Multimedia/Footer/logoCG.png" alt="Logo Desarrollador" oncontextmenu="return false;">
+                </a>
+                <h5>© <span id="yearSpan"></span></h5>
+            </div>
+            <div class="div-terms">
+                <a href="terms.html">Privacy - Terms</a>
+            </div>
+        </div>
     </div>
 </body>
 </html>

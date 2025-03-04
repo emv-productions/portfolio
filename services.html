@@ -15,7 +15,8 @@
     <!-- Título, referencias -->
     <title>EMV - Services</title>
     <link rel="Shortcut Icon" type="image/x-icon" href="Multimedia/Master/icono.ico" />
-    <script src="JS/header.js"></script>
+    <link href="CSS/header.css" rel="stylesheet" />
+    <link href="CSS/footer.css" rel="stylesheet" />
     <script src="JS/footer.js"></script>
     <link href="CSS/services.css" rel="stylesheet" />
     <link href="CSS/master.css" rel="stylesheet" />
@@ -30,7 +31,19 @@
 </head>
 <body>
     <div class="container">
-        <div id="header"></div>
+        <div id="header">
+            <div class="logo">
+                <a href="index.html" style="text-decoration: none;"><img src="Multimedia/Header/Logos/logo.png"
+                        alt="Logo" oncontextmenu="return false;"></a>
+            </div>
+            <div class="links">
+                <a href="collections.html">Collections</a>
+                <a href="collaborations.html">Collaborations</a>
+                <a href="services.html">Services</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
         <div id="services_content">
             <div class="div-photography">
                 <h2>Photography</h2>
@@ -38,7 +51,7 @@
             </div>
             <div class="div-videography">
                 <h2>Videography</h2>
-                <video src="Multimedia/Services/videography.mp4" alt="Videography" oncontextmenu="return false;" preload="auto" autoplay="" controls="" loop=""></video>
+                <video src="Multimedia/Services/videography.mp4" alt="Videography" poster="Multimedia/Services/videography-poster.jpg" oncontextmenu="return false;" preload="auto" controls="" loop="false"></video>
                 <p>"Photography and videography have become my passion, and that's why I enjoy every project that comes my way. Each project and person has something different to tell, and through my organic and reportage style, I seek to convey it through my camera."</p>
             </div>
             <div class="div-services-detail">
@@ -60,7 +73,17 @@
                 </ul>
             </div>
         </div>
-        <div id="footer"></div>
+        <div id="footer">
+            <div class="div-copyright">
+                <a href="https://instagram.com/compugrossok/?theme=dark" target="_blank">
+                    <img title="CompuGross" src="Multimedia/Footer/logoCG.png" alt="Logo Desarrollador" oncontextmenu="return false;">
+                </a>
+                <h5>© <span id="yearSpan"></span></h5>
+            </div>
+            <div class="div-terms">
+                <a href="terms.html">Privacy - Terms</a>
+            </div>
+        </div>
     </div>
 </body>
 </html>

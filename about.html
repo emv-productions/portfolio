@@ -15,7 +15,8 @@
     <!-- Título, referencias -->
     <title>EMV - About</title>
     <link rel="Shortcut Icon" type="image/x-icon" href="Multimedia/Master/icono.ico" />
-    <script src="JS/header.js"></script>
+    <link href="CSS/header.css" rel="stylesheet" />
+    <link href="CSS/footer.css" rel="stylesheet" />
     <script src="JS/footer.js"></script>
     <link href="CSS/about.css" rel="stylesheet" />
     <link href="CSS/master.css" rel="stylesheet" />
@@ -30,7 +31,19 @@
 </head>
 <body>
     <div class="container">
-        <div id="header"></div>
+        <div id="header">
+            <div class="logo">
+                <a href="index.html" style="text-decoration: none;"><img src="Multimedia/Header/Logos/logo.png"
+                        alt="Logo" oncontextmenu="return false;"></a>
+            </div>
+            <div class="links">
+                <a href="collections.html">Collections</a>
+                <a href="collaborations.html">Collaborations</a>
+                <a href="services.html">Services</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
         <div id="about_content">
             <div class="text-content">
                 <h3>About</h3>
@@ -47,7 +60,17 @@
                 <img src="Multimedia/About/about.jpg" alt="About" oncontextmenu="return false;">
             </div>
         </div>
-        <div id="footer"></div>
+        <div id="footer">
+            <div class="div-copyright">
+                <a href="https://instagram.com/compugrossok/?theme=dark" target="_blank">
+                    <img title="CompuGross" src="Multimedia/Footer/logoCG.png" alt="Logo Desarrollador" oncontextmenu="return false;">
+                </a>
+                <h5>© <span id="yearSpan"></span></h5>
+            </div>
+            <div class="div-terms">
+                <a href="terms.html">Privacy - Terms</a>
+            </div>
+        </div>
     </div>
 </body>
 </html>
