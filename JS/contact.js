@@ -39,7 +39,7 @@ function confirmAlert() {
         allowOutsideClick: false,
         allowEscapeKey: false,
         allowEnterKey: false,
-        title: 'Mensaje enviado correctamente!',
+        title: 'Message sent successfully!',
         icon: 'success',
     })
 }
@@ -49,7 +49,7 @@ function warningAlert() {
         allowOutsideClick: false,
         allowEscapeKey: false,
         allowEnterKey: false,
-        title: 'Por favor, verifica el reCAPTCHA',
+        title: 'Please check reCAPTCHA',
         icon: 'warning',
         timer: 2000,
         showConfirmButton: false
@@ -61,7 +61,7 @@ function errorAlert(errorText) {
         allowOutsideClick: false,
         allowEscapeKey: false,
         allowEnterKey: false,
-        title: 'No se pudo enviar el Mail. ' + errorText,
+        title: 'Message could not be sent. ' + errorText,
         icon: 'error',
     })
 }
