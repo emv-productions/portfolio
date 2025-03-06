@@ -26,5 +26,5 @@ body {
 }
 
 #header .links a.active {
-    border-bottom: 2px solid #000; /* Color del borde cuando está activo */
+    border-bottom: 7px solid #0009;
 }

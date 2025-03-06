@@ -33,10 +33,13 @@
     <div class="container">
         <div id="header">
             <div class="logo">
-                <a href="index.html" style="text-decoration: none;"><img src="Multimedia/Header/Logos/logo.png"
-                        alt="Logo" oncontextmenu="return false;"></a>
+                <a href="index.html">
+                    <img src="Multimedia/Header/Logos/logo.png" alt="Logo" oncontextmenu="return false;">
+                </a>
             </div>
-            <div class="links">
+            <div class="menu-icon" onclick="toggleMenu()">☰</div>
+            <div class="links" onclick="toggleMenu()">
+                <button title="Close Menu" class="close-btn" onclick="closeMenu()">✖</button> <!-- Botón de cierre -->
                 <a href="collections.html">Collections</a>
                 <a href="collaborations.html">Collaborations</a>
                 <a href="services.html">Services</a>

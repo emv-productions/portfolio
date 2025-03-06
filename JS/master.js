@@ -10,3 +10,18 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
+function toggleMenu() {
+    let menu = document.querySelector('.links');
+    menu.classList.toggle('active');
+}
+
+document.addEventListener('click', function (event) {
+    let menu = document.querySelector('.links');
+    let menuIcon = document.querySelector('.menu-icon');
+
+    // Si el clic NO es en el menú ni en el icono de hamburguesa, cerrar el menú
+    if (!menu.contains(event.target) && !menuIcon.contains(event.target)) {
+        menu.classList.remove('active');
+    }
+});
