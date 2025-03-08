@@ -71,3 +71,24 @@ ul li {
     text-align: center;
     -webkit-transition: 0.1s ease-in-out all;
 }
+
+#br_768 {
+    display: none;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+    .div-videography p {
+        padding: 2rem 2rem;
+    }
+
+    .div-services-detail ul {
+        width: 100%;
+        padding: 0;
+    }
+
+    #br_768 {
+        display: block;
+    }
+}

@@ -5,11 +5,12 @@
 }
 
 body {
-    min-width: 355px !important;
+    min-width: 360px !important;
     margin: 0;
     padding: 0;
     text-transform: uppercase !important;
     background-color: #eeedeb;
+    overflow-x: hidden;
 }
 
 .container {

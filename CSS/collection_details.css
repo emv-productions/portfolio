@@ -9,7 +9,7 @@
     align-content: center;
     justify-content: center;
     text-align: left;
-    margin: 84px 0 0 0;
+    margin: 80px 0 0 0;
 }
 
 .portada img {
@@ -54,7 +54,7 @@
     align-content: center;
     width: 100vw;
     position: fixed;
-    bottom: 30%;
+    bottom: 50%;
 }
 
 .btn-prev,
@@ -65,13 +65,20 @@
     display: flex;
 }
 
+.btn-prev a {
+    margin: 0 0 0 1.5rem;
+}
+
+.btn-next a {
+    margin: 0 2rem 0 0;
+}
+
 .btn-prev a,
 .btn-next a {
     font-size: 1.5em;
     font-weight: 600;
     color: #fff;
     text-shadow: 0 0 4px #000;
-    margin: 1rem;
     cursor: pointer;
     text-decoration: none;
     transform: scaleY(3);

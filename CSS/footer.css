@@ -38,6 +38,7 @@
 }
 
 .div-copyright h5 {
+    margin: 0 !important;
     cursor: default;
     font-size: 18px !important;
     font-weight: 600 !important;
@@ -57,4 +58,15 @@
     translate: 0 -2px;
     text-shadow: 0px 2px 2px #0004;
     -webkit-transition: 0.25s ease-in-out all;
+}
+
+/* Responsive */
+
+@media (max-width: 500px) {
+    #footer {
+        flex-direction: column-reverse;
+        padding: 1rem;
+        height: 200px;
+        gap: 1.5rem;
+    }
 }

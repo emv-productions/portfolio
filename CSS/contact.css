@@ -42,6 +42,30 @@
     text-align: center;
 }
 
+.text-content .contact {
+    height: 25%;
+    border-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.text-content .contact {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.text-content .contact a img:hover {
+    transform: scale(1.25);
+    -webkit-transition: 0.25s !important;
+}
+
+.text-content .contact img {
+    width: 25px;
+    -webkit-transition: 0.25s !important;
+}
+
 #contactForm {
     display: flex;
     flex-direction: column;
@@ -49,7 +73,7 @@
 
 .fields-content label {
     text-transform: none;
-    font-size: 20px;
+    font-size: 16px;
     margin: 0;
     align-items: center;
     align-content: center;
@@ -65,8 +89,8 @@
 
 .fields-content input, .fields-content textarea {
     margin: 0 0 .5rem 0;
-    height: 40px;
-    min-height: 40px;
+    height: 25px;
+    min-height: 25px;
     border: 1px solid #0003;
     padding: .5rem;
     text-transform: uppercase;
@@ -82,7 +106,7 @@
 
 .fields-content textarea {
     overflow-y: scroll;
-    min-height: 80px;
+    min-height: 35px;
     resize: none;
 }
 
@@ -113,4 +137,45 @@
 .fields-content .btn:hover {
     filter:invert(100);
     -webkit-transition: 0.25s ease-in-out all;
+}
+
+/* Responsive */
+
+@media (max-width: 1100px) {
+    #contact_content {
+        flex-direction: column;
+        height: 100%;
+    }
+    
+    .text-content {
+        width: 100%;
+        padding: 2rem 3rem;
+    }
+    
+    .text-content p {
+        padding: 1.5rem 0;
+    }
+    
+    .fields-content {
+        width: 100%;
+        padding: 2rem 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .fields-content .btn-content {
+        flex-direction: column;
+        gap: 1rem;
+        overflow: hidden;
+    }
+
+    .fields-content .btn-content #captcha {
+        width: fit-content !important;
+        background-color: #f9f9f9;
+    }
+
+    .fields-content .btn-content .btn {
+        width: 100%;
+        height: fit-content;
+    }
 }

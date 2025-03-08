@@ -64,7 +64,23 @@
     opacity: 0;
     text-align: center;
     color: #fff;
-    text-shadow: 0 0 10px #000;
+    text-shadow: 0 1px 4px #000;
     font-size: 1.5em !important;
     -webkit-transition: 0.25s ease-in-out all;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+    .cards-grid {
+        flex-direction: column;
+    }
+
+    .cards-grid a {
+        width: 100%;
+    }
+
+    .card {
+        height: 200px;
+    }
 }

@@ -22,8 +22,8 @@ div {
 }
 
 .div-image img {
-    width: 100%;
-    height: 100%;
+    width: auto;
+    height: 100vh;
     object-fit: cover;
 }
 
@@ -120,4 +120,68 @@ p {
 .content .contact img {
     width: 25px;
     -webkit-transition: 0.25s !important;
+}
+
+/* Responsive */
+
+@media (max-width: 834px) and (min-height: 500px) {
+    body {
+        height: 100vh;
+    }
+    
+    .container {
+        flex-direction: column !important;
+        height: 100vh !important;
+        max-height: 100vh !important;
+        overflow-y: hidden;
+    }
+
+    .div-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        opacity: 60%;
+    }
+
+    .div-image img {
+        object-fit: contain;
+    }
+
+    .content {
+        position: relative;
+        z-index: 2;
+        background-color: transparent;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .content .logo {
+        height: 15%;
+    }
+
+    .content .text {
+        height: 70%;
+    }
+
+    .content .contact {
+        height: 15%;
+    }
+
+    .content .logo img, 
+    .content .contact a {
+        filter: drop-shadow(0 1px 4px #fff);
+    }
+
+    .content .text .title p,
+    .content .text .subtitle p {
+        text-shadow: 0 1px 4px #fff;
+        font-weight: 600;
+    }
+
+    .content .text .div-btn .btn {
+        filter: invert(100);
+        box-shadow: 0 1px 4px #fff;
+    }
 }
