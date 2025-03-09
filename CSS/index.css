@@ -176,7 +176,8 @@ p {
 
     .content .text .title p,
     .content .text .subtitle p {
-        text-shadow: 0 1px 4px #fff;
+        color: #fff;
+        text-shadow: 0 1px 4px #000;
         font-weight: 600;
     }
 

@@ -8,6 +8,7 @@
         content="photography workshop, photography service, portfolio photography, the photographs, photography, lighting photography, photographer, kodak photos, family photos, white photos, digital photos, product photos, photo photos, corporate photos, photos with lights, artistic photos, minimalist photography, real estate photography, event photographers, event photographer, freelance photographer, aerial photography, advertising photography, professional photography, landscape photography, night photography, documentary photography, product photography, landscape photography, nature photography, corporate photography, artistic photography, color photography, advertising photography, professional photography, product photo, photoshop photo, panoramic photo, night photo, minimalist photo, photo europe, studio photo, business photo, documentary photo, digital photo, sky photo, portrait photo, studio photo, corporate photo, flash photo, photo studio, photo editing, photo direction, professional photo cameras, photo cameras, backlight photography, photo book, photo albums">
     <link href="CSS/header.css" rel="stylesheet" />
     <link href="CSS/footer.css" rel="stylesheet" />
+    <script src="JS/master.js"></script>
     <script src="JS/footer.js"></script>
     <link href="CSS/terms.css" rel="stylesheet" />
     <link href="CSS/master.css" rel="stylesheet" />
@@ -22,7 +23,8 @@
             </a>
         </div>
         <div class="menu-icon" onclick="toggleMenu()">☰</div>
-        <div class="links">
+        <div class="links" onclick="toggleMenu()">
+            <button title="Close Menu" class="close-btn" onclick="closeMenu()">✖</button> <!-- Botón de cierre -->
             <a href="collections.html">Collections</a>
             <a href="collaborations.html">Collaborations</a>
             <a href="services.html">Services</a>

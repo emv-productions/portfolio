@@ -7,6 +7,11 @@
     margin: 80px 0 0 0;
 }
 
+#services_content h1 {
+    padding: 2rem 0;
+    font-weight: 600;
+}
+
 .div-photography, .div-videography, .div-services-detail {
     display: flex;
     flex-direction: column;

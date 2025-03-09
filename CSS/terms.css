@@ -7,18 +7,19 @@
 
 h1, h2 {
     font-family: EB Garamond, serif;
-    font-weight: 400;
-    letter-spacing: .4rem;
+    font-weight: 600;
+    letter-spacing: .3rem;
     text-align: center;
 }
 
 h1 {
-    font-size: 2.8em;
+    text-transform: uppercase;
+    font-size: 2.5rem;
 }
 
 h2 {
     font-size: 2em;
-    margin: 4rem 0;
+    margin: 2rem 0;
 }
 
 ul {
@@ -37,4 +38,17 @@ li, p {
 a {
     text-decoration: none;
     color: #000;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+    .content {
+        margin-top: 80px;
+        padding: 2rem 1rem;
+    }
+
+    h2 {
+        text-align: left;
+    }
 }

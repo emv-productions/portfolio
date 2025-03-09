@@ -4,6 +4,12 @@
     align-items: center;
     align-content: center;
     margin: 80px 0 0 0;
+    flex-direction: column;
+}
+
+#collaborations_content h1 {
+    padding: 2rem 0;
+    font-weight: 600;
 }
 
 .cards-grid {
@@ -82,5 +88,25 @@
 
     .card {
         height: 200px;
+    }
+
+    .card .div-img, .card:hover .div-img {
+        opacity: 0.7;
+        -webkit-transition: 0.25s ease-in-out all;
+    }
+
+    .card .div-text {
+        height: 200px !important;
+        display: flex !important;
+        align-items: end !important;
+    }
+
+    .card h3 {
+        padding: 0 10px !important;
+        text-align: left !important;
+        opacity: 1 !important;
+        text-shadow: 0 1px 10px #000 !important;
+        font-weight: 600 !important;
+        -webkit-transition: 0.25s ease-in-out all;
     }
 }

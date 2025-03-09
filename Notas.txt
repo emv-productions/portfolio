@@ -1,1 +1,0 @@
-Resta hacer menú hamburguesa en header y diseño responsivo

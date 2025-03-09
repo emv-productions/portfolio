@@ -38,7 +38,8 @@
                 </a>
             </div>
             <div class="menu-icon" onclick="toggleMenu()">☰</div>
-            <div class="links">
+            <div class="links" onclick="toggleMenu()">
+                <button title="Close Menu" class="close-btn" onclick="closeMenu()">✖</button> <!-- Botón de cierre -->
                 <a href="collections.html">Collections</a>
                 <a href="collaborations.html">Collaborations</a>
                 <a href="services.html">Services</a>
@@ -47,6 +48,7 @@
             </div>
         </div>
         <div id="collaborations_content">
+            <h1>Collaborations</h1>
             <div id="cards-container" class="cards-grid">
                 <a class="card-link" href="https://www.youtube.com/watch?v=U4dmdqWiulk">
                     <div class="card">
