@@ -2,6 +2,7 @@
     font-family: "New spirit condensed", serif;
     font-style: normal;
     scroll-behavior: smooth;
+    user-select: none;
 }
 
 body {
@@ -28,4 +29,21 @@ body {
 
 #header .links a.active {
     border-bottom: 7px solid #0009;
+}
+
+.title-location {
+    cursor: default;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 0 !important;
+    font-weight: 600;
+    position: fixed;
+    z-index: 999999;
+    top: 0;
+    right: 2rem;
+    font-size: 99%;
+    margin: 0 !important;
 }

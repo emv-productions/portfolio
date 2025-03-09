@@ -64,8 +64,9 @@
 
 @media (max-width: 500px) {
     #footer {
-        flex-direction: column-reverse;
-        height: 200px;
+        /* flex-direction: column-reverse; */
+        /* height: 200px; */
+        height: fit-content;
         gap: 1.5rem;
     }
 }

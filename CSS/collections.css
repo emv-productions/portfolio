@@ -7,11 +7,6 @@
     flex-direction: column;
 }
 
-#collections_content h1 {
-    padding: 2rem 0;
-    font-weight: 600;
-}
-
 .cards-grid {
     display: flex;
     width: 100%;
