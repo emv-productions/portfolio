@@ -1,0 +1,1 @@
+Buscar otra forma de pasar a la colección previa y siguiente, sin utilizar las flechas

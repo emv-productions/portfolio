@@ -89,3 +89,16 @@
     display: flex;
     justify-content: end;
 }
+
+/* Responsive */
+
+@media (max-width: 768px) {
+    .text {
+        padding: 3rem 1rem;
+        text-align: left;
+    }
+    
+    .text .description {
+        padding: 1rem 1rem;
+    }
+}
