@@ -119,4 +119,12 @@
     .links a {
         font-size: 1.8rem;
     }
+
+    .logo {
+        margin-left: -4rem;
+    }
+
+    .logo img {
+        width: 120px;
+    }
 }

@@ -32,10 +32,7 @@
 .text-content p a {
     text-decoration: none;
     color: #000;
-}
-
-.text-content p a:hover {
-    border-bottom: 1px solid #fff;
+    border-bottom: 2px solid #000;
 }
 
 .img-content img {
@@ -80,6 +77,7 @@
     .text-content p a {
         color: #fff;
         text-shadow: 0 1px 4px #000;
+        border-bottom: 4px solid #fff;
         cursor: pointer;
     }
 }

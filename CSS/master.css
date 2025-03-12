@@ -47,3 +47,13 @@ body {
     font-size: 99%;
     margin: 0 !important;
 }
+
+@media (max-width: 768px) {
+    .title-location {
+        width: 137px;
+        right: 1rem;
+        top: 1px;
+        font-size: 90%;
+        transform: scaleY(1.5);
+    }
+}

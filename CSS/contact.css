@@ -99,7 +99,7 @@
 
 .fields-content textarea {
     overflow-y: scroll;
-    min-height: 35px;
+    min-height: 50px;
     resize: none;
 }
 
@@ -170,5 +170,9 @@
     .fields-content .btn-content .btn {
         width: 100%;
         height: fit-content;
+    }
+
+    .fields-content textarea {
+        min-height: 100px;
     }
 }
