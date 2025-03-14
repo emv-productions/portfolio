@@ -22,6 +22,10 @@
     flex-direction: column;
 }
 
+.text-content img {
+    display: none;
+}
+
 .text-content p {
     margin: 0 !important;
     padding: 0 2rem;
@@ -59,12 +63,18 @@
         height: fit-content;
         margin: 0;
         padding-top: 2rem !important;
-        background: url(../Multimedia/About/about.jpg);
-        background-size: cover;
-        /* background-size: contain; */
-        background-position: center;
         color: #fff !important;
         text-shadow: 0 1px 4px #000 !important;
+    }
+
+    .text-content img {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        opacity: 0.6;
+        height: 100% !important;
     }
 
     .text-content p {
@@ -72,13 +82,27 @@
         padding: 0 10vw 4rem 10vw;
         height: fit-content;
         overflow-y: scroll;
+        color: #000 !important;
+        font-weight: 600;
+        text-shadow: 0 1px 10px #fff !important;
     }
 
     .text-content p a {
-        color: #fff;
-        text-shadow: 0 1px 4px #000;
-        border-bottom: 4px solid #fff;
+        color: #000;
+        text-shadow: 0 1px 4px #fff;
+        border-bottom: 4px solid #000;
         cursor: pointer;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    #footer {
+        padding: 1rem 0;
+        margin: 0;
     }
 }
 
