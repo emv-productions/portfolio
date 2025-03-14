@@ -53,8 +53,7 @@
     align-items: center;
     align-content: center;
     width: 100vw;
-    position: fixed;
-    bottom: 50%;
+    padding: 2rem 0;
 }
 
 .btn-prev,
@@ -66,7 +65,7 @@
 }
 
 .btn-prev a {
-    margin: 0 0 0 1.5rem;
+    margin: 0 0 0 2rem;
 }
 
 .btn-next a {
@@ -77,15 +76,14 @@
 .btn-next a {
     font-size: 1.5em;
     font-weight: 600;
-    color: #fff;
-    text-shadow: 0 0 4px #000;
+    color: #0009;
     cursor: pointer;
     text-decoration: none;
-    transform: scaleY(3);
+    text-align: left;
+    transform: scaleY(1.2);
 }
 
 .btn-next {
-    text-align: right;
     display: flex;
     justify-content: end;
 }
@@ -93,6 +91,10 @@
 /* Responsive */
 
 @media (max-width: 768px) {
+    div.logo {
+        margin: 0;
+    }
+    
     .text {
         padding: 3rem 1rem;
         text-align: left;
@@ -100,5 +102,20 @@
     
     .text .description {
         padding: 1rem 1rem;
+    }
+
+    .btn-prev a {
+        margin: 0;
+    }
+    
+    .btn-next a {
+        margin: 0;
+        padding: 0 2rem;
+    }
+
+    .btn-prev a,
+    .btn-next a {
+        font-size: 16px;
+        text-align: center;
     }
 }
