@@ -25,3 +25,15 @@ document.addEventListener('click', function (event) {
         menu.classList.remove('active');
     }
 });
+
+document.addEventListener("scroll", function () {
+    const title = document.querySelector(".title");
+
+    if (window.scrollY > 450) {
+        title.classList.add("active");
+        title.classList.remove("hidden");
+    } else {
+        title.classList.remove("hidden");
+        title.classList.remove("active");
+    }
+});
