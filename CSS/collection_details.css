@@ -132,6 +132,11 @@
         text-align: left;
     }
     
+    .text h1 {
+        font-size: 20px;
+        padding-top: 20px;
+    }
+
     .text .description {
         padding: 1rem 1rem;
     }
