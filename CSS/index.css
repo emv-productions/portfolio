@@ -27,6 +27,35 @@ div {
     object-fit: cover;
 }
 
+#carouselPortada {
+    background: #000; /* evita que se vea blanco */
+}
+
+.carousel-fade .carousel-item {
+    opacity: 0.1;
+    transition: opacity 1s ease-in-out;
+}
+
+.carousel-fade .carousel-item.active {
+    opacity: 0.9;
+}
+
+.carousel-item {
+    position: absolute;
+    inset: 0;
+}
+
+.carousel-inner {
+    position: relative;
+}
+
+#carouselPortada .carousel-item-next,
+#carouselPortada .carousel-item-prev,
+#carouselPortada .carousel-item.active.carousel-item-start,
+#carouselPortada .carousel-item.active.carousel-item-end {
+    transform: none !important;
+}
+
 .content {
     border-color: blue;
     display: flex;
