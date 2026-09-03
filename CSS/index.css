@@ -1,7 +1,3 @@
-div {
-    /* border: 3px solid; */
-}
-
 .container {
     height: 100vh !important;
     max-height: 100vh !important;
@@ -57,7 +53,6 @@ div {
 }
 
 .content {
-    border-color: blue;
     display: flex;
     flex-direction: column;
 }
@@ -65,7 +60,6 @@ div {
 .content .logo,
 .content .contact {
     height: 25%;
-    border-color: red;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -81,7 +75,6 @@ div {
 
 .content .text {
     height: 50%;
-    border-color: yellow;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -157,7 +150,7 @@ p {
     body {
         height: 100vh;
     }
-    
+
     .container {
         flex-direction: column !important;
         height: 100vh !important;
@@ -198,7 +191,7 @@ p {
         height: 15%;
     }
 
-    .content .logo img, 
+    .content .logo img,
     .content .contact a {
         filter: drop-shadow(0 1px 4px #fff);
     }
