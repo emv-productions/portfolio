@@ -24,7 +24,7 @@
 }
 
 #carouselPortada {
-    background: #000; /* evita que se vea blanco */
+    /* background: #000; evita que se vea blanco */
 }
 
 .carousel-fade .carousel-item {
